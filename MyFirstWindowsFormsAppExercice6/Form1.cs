@@ -16,5 +16,20 @@ namespace MyFirstWindowsFormsAppExercice6
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (radioButton1.Checked)
+            {
+                textBox1.Text = "Choosen color: " +radioButton1.Text;
+            } else if (radioButton2.Checked)
+            {
+                textBox1.Text = "Choosen color: " + radioButton2.Text;
+            } else 
+            {
+                textBox1.Text = "Choosen color: " + radioButton3.Text;
+            }
+                
+        }
     }
 }

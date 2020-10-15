@@ -15,10 +15,12 @@ namespace MyFirstWindowsFormsAppExercice4b
         public Form1()
         {
             InitializeComponent();
+            listBox1.Items.Add("+");
+            listBox1.Items.Add("-");
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
+        {           
             string item = listBox1.GetItemText(listBox1.SelectedItem);
 
             if (item == "+")
